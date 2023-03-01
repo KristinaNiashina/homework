@@ -3,10 +3,7 @@ function solveEquation(a, b, c) {
   let arr = [];
   let disc = Math.pow(b, 2)-4*a*c;
 
-  if (disc < 0){
-    //почему-то не получается использовать continue;
-  }
-  else if (disc === 0){
+  if (disc === 0){
     let solution = -b/(2*a);
     arr.push(solution);
   }
