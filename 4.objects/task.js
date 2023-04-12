@@ -11,9 +11,7 @@ Student.prototype.setSubject = function (subjectName) {
 
 Student.prototype.addMarks = function (...marksToAdd) {
   if('marks' in this === true){
-    for(let e of marksToAdd){
-      this.marks.push(e);
-    }
+      this.marks.push(...marksToAdd);
   }
 }
 
